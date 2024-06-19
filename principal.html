@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/vB22P4YP/image.png">
+    </header>
+    <nav>
+        <button>Frescos</button>
+        <button>Embalados</button>
+        <button>Padaria</button>
+        <button>Higiene</button>
+        <button>Limpeza</button>
+        <button>Bebidas</button>
+        <button>Laticínios</button>
+    </nav>
+    <div id="portal">
+        <h3>Página do administrador</h3>
+        <img src="https://i.postimg.cc/2ysH4JHd/image.png" id="adm">
+    </div>
+    <div class="container py-4">
+        <h1 class="mb-4">Adicione um novo produto</h1>
+        <div class="mb-3" id="form-container">
+            <input type="text" id="item" class="form-control mb-2" placeholder="Produto" required>
+            <input type="number" id="valor" class="form-control mb-2" placeholder="0.00" step="0.01" required>
+            <button onclick="create()" class="btn btn-primary me-2">Salvar</button>
+            <button onclick="limparForm()" class="btn btn-secondary">Limpar</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="item-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

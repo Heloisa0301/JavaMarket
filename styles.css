@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #347936;
+    text-align: center;
+    height: 80px;
+}
+
+header img {
+    height: 70px;
+    margin-top: 5px;
+}
+
+#arrow{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#carrinho{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+
+table{
+    margin-left: 3%; 
+}
+
+h2{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50px;
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+h1{
+    display: inline-block;
+    margin-left: 14%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+section table{
+    width: 60%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+tr:nth-child(even) { 
+    background-color: #f2f2f2;
+}
+
+td img{
+    width: 75px;
+    height: 70px;
+    border-radius: 30%;
+}
+
+td button{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    padding: 5px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+td button:hover{
+    background-color: #347936;
+}
+
+td button:focus{
+    background-color: rgb(255, 88, 88);
+    border: 1px solid  rgb(255, 88, 88);
+}

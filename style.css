@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #327535;
+    text-align: center;
+    height: 80px;
+}
+
+header img {
+    height: 70px;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #155515;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+nav button {
+    background-color: #155515;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    flex: 1;
+    padding: 5px 57px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 3px;
+    position: relative; 
+}
+
+nav button::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 0%;
+    height: 5px;
+    background: #0e0e0e;
+    left: 50%; 
+    bottom: -3px; 
+    transition: all .25s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav button:hover::after {
+    width: 70%;
+}
+
+#carrinho{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+section h2{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #228B22;
+    text-shadow: 2px 2px 4px rgba(177, 177, 177, 0.5);
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.ofertas .produto {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(189, 186, 186);
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
