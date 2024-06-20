@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+</head>
+<body>
+    <h1>Página 1</h1>
+    <input type="text" id="nome" placeholder="Digite um nome">
+    <input type="text" id="valor" placeholder="Digite um valor">
+    <button id="adicionar" onclick="adicionarItem()">Adicionar</button>
+
+    <script>
+        // Função para adicionar um item
+        function adicionarItem() {
+            // Obtém os valores dos inputs
+            const name = document.getElementById('nome').value;
+            const value = document.getElementById('valor').value;
+            if (name && value) {
+                // Recupera a lista de itens do Local Storage
+                let items = JSON.parse(localStorage.getItem('items')) || [];
+                // Adiciona o novo item à lista
+                items.push({ name, value });
+                // Salva a lista atualizada no Local Storage
+                localStorage.setItem('items', JSON.stringify(items));
+                // Opcional: Limpa os inputs após adicionar
+                alert('Item adicionado!');
+            } else {
+                alert('informe um nome e um valor');
+            }
+        }
+    </script>
+</body>
+</html>
