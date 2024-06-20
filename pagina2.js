@@ -35,7 +35,7 @@ function editar(index) {
     const items = JSON.parse(localStorage.getItem('items')) || [];
     const edtnome = prompt('Edite o nome:', items[index].name);
     const edtvalor = prompt('Edite o valor:', items[index].value);
-    if (edtnome !== null && edtvalor !== '' && edtvalor !== null && edtvalor !== '') {
+    if (edtnome !== null && edtnome !== '' && edtvalor !== null && edtvalor !== '') {
         items[index].name = edtnome;
         items[index].value = edtvalor;
         localStorage.setItem('items', JSON.stringify(items));
@@ -51,4 +51,4 @@ function remover(index) {
 }
 
 // Exibe os itens ao carregar a página
-Imprimir();
+document.addEventListener('DOMContentLoaded', Imprimir);
